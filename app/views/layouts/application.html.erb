@@ -10,7 +10,8 @@
   </head>
 
   <body>
-
+    <div id="flex-content-conatiner">
+     
      <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,6 +29,21 @@
         </ul>
       </div>
     </nav>
+
+    <% if notice.present? %>
+      <p class="notice"><%= notice %></p>
+    <% end %>
+    <% if alert.present? %>  
+      <p class="alert"><%= alert %></p>
+      <% end %>
+
     <%= yield %>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <b>Footer Here</b>
+    </div>
+  </div>
   </body>
 </html>
