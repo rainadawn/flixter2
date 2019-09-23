@@ -16,6 +16,7 @@ class Instructor::CoursesController < ApplicationController
 	end
 
 	def show
+		@current_course = Course.find(params[:id])	
 	end
 
 	private
