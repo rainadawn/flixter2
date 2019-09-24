@@ -21,4 +21,4 @@ class LessonsController < ApplicationController
   	end
   end
 
-end
+
