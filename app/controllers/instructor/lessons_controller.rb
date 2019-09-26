@@ -36,7 +36,7 @@ class Instructor::LessonsController < ApplicationController
     end
   end
 
-  helper_method :current_course
+  helper_method :current_section
   def current_section
   	@current_section ||= Section.find(params[:section_id])
   end
@@ -44,4 +44,4 @@ class Instructor::LessonsController < ApplicationController
   	def lesson_params
     	params.require(:lesson).permit(:title, :subtitle, :video, :row_order_position)
   	end
-end 
+end  
