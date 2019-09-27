@@ -9,7 +9,7 @@
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
     <% end %>
-
+<div class="booyah-box col-10 offset-1">
     <%= f.input :password,
                 hint: "leave it blank if you don't want to change it",
                 required: false,
@@ -26,6 +26,7 @@
   <div class="form-actions">
     <%= f.button :submit, "Update" %>
   </div>
+</div>
 <% end %>
 
 <h3>Cancel my account</h3>
